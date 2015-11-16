@@ -88,25 +88,6 @@ namespace RenameWiiBackup
             }
         }
 
-        protected override void Dispose(bool disposing)
-        {
-            bool flag;
-            if (!disposing)
-            {
-                flag = true;
-            }
-            else
-            {
-                flag = this.components == null;
-            }
-            bool flag1 = flag;
-            if (!flag1)
-            {
-                this.components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
         private string GetNewRename(Dictionary<string, string> idGame, FileInfo file)
         {
             string str;
